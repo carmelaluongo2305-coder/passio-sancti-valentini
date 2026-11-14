@@ -1,0 +1,593 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<teiCorpus xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Passio sancti Valentini (BHL 8460)</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>Edizione critica digitale</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Edizione critica e traduzione italiana</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xml:id="testo_latino">
+   <teiHeader>
+  <fileDesc>
+    <titleStmt>
+      <title>Passio sancti Valentini episcopi et martyris (BHL 8460)</title>
+      <editor>Edoardo D'Angelo</editor>
+      <respStmt xml:id="editor">
+        <resp>Edizione digitale e codifica XML-TEI a cura di</resp>
+        <name>Carmela Luongo</name>
+      </respStmt>
+    </titleStmt>
+    <publicationStmt>
+      <publisher>Edizione digitale realizzata con EVT 2 (Edition Visualization Technology)</publisher>
+      <date>2026</date>
+      <availability>
+        <p>Edizione critica digitale ad accesso aperto per fini di studio e ricerca.</p>
+      </availability>
+    </publicationStmt>
+    <sourceDesc>
+      <listBibl>
+        <head>Edizioni a stampa precedenti</head>
+        <bibl xml:id="AASS">
+          <title>Acta Sanctorum</title>, Febr. II, coll. 756-757 («ex quinque MSS. &amp; Mombritio»).
+        </bibl>
+        <bibl xml:id="Mombritius">
+          B. Mombritius, <title>Vitae Sanctorum seu Sanctuarium</title>, Paris, 1910, II, pp. 343-344.
+        </bibl>
+        <bibl xml:id="Surius">
+          L. Surius, <title>De probatis Sanctorum historiis</title>, Coloniae, 1618, I, pp. (1570) 984-986 o (1875) 349-352.
+        </bibl>
+        <bibl xml:id="DAngelo">
+          E. D'Angelo, <title>La Passio s. Valentini</title>, pp. 211-222; ed. integrata <title>H 3. Passio sancti Valentini martyris</title>, pp. 226-242.
+        </bibl>
+      </listBibl>
+
+      <listWit>
+        <head>Conspectus Siglorum</head>
+
+        <witness xml:id="M">
+          <abbr type="siglum">M</abbr>
+          <msDesc>
+            <msIdentifier>
+              <settlement>Milano</settlement>
+              <repository>Biblioteca Ambrosiana</repository>
+              <idno>P.113.sup</idno>
+            </msIdentifier>
+            <msContents>
+              <msItem>
+                <locus from="55r" to="58r">ff. 55r-58r</locus>
+                <title>Passio sancti Valentini (BHL 8460)</title>
+              </msItem>
+            </msContents>
+            <physDesc>
+              <objectDesc>
+                <supportDesc>
+                  <p>Manoscritto membranaceo (<origDate>saec. Xex</origDate>).</p>
+                </supportDesc>
+              </objectDesc>
+            </physDesc>
+            <additional>
+              <listBibl>
+                <bibl>F. Van Ortroy, <title>Catalogus codicum hagiographicorum Latinorum Bibliothecae Ambrosianae Mediolanensis</title>, in AB, XI (1882), pp. 205-368, qui pp. 360-362.</bibl>
+                <bibl>M.L. Gengaro – G.V. Guglielmetti, <title>Inventario dei codici decorati e miniati della Biblioteca Ambrosiana</title>, Firenze, 1968, pp. 51-52.</bibl>
+              </listBibl>
+            </additional>
+          </msDesc>
+        </witness>
+
+        <witness xml:id="B">
+          <abbr type="siglum">B</abbr>
+          <msDesc>
+            <msIdentifier>
+              <settlement>Bologna</settlement>
+              <repository>Biblioteca Universitaria</repository>
+              <idno>1576</idno>
+            </msIdentifier>
+            <msContents>
+              <msItem>
+                <locus from="117v" to="120v">ff. 117v-120v</locus>
+                <title>Passio sancti Valentini (BHL 8460)</title>
+              </msItem>
+            </msContents>
+            <physDesc>
+              <objectDesc>
+                <supportDesc>
+                  <p>Manoscritto membranaceo (<origDate>saec. Xmed-XImed</origDate>).</p>
+                </supportDesc>
+              </objectDesc>
+            </physDesc>
+            <history>
+              <origin>
+                <p>Forse proveniente da <origPlace>Nonantola</origPlace>.</p>
+              </origin>
+            </history>
+            <additional>
+              <listBibl>
+                <bibl>A. Poncelet, <title>Catalogus codicum hagiographicorum Latinorum Bibliothecae Universitatis Bononiensis</title>, in AB, XLII (1924), pp. 321-370, qui pp. 339-342.</bibl>
+              </listBibl>
+            </additional>
+          </msDesc>
+        </witness>
+
+        <witness xml:id="Br">
+          <abbr type="siglum">Br</abbr>
+          <msDesc>
+            <msIdentifier>
+              <settlement>Bruxelles</settlement>
+              <repository>KBR (Bibliothèque Royale de Belgique)</repository>
+              <idno>7984</idno>
+            </msIdentifier>
+            <msContents>
+              <msItem>
+                <locus from="48v" to="51r">ff. 48v-51r</locus>
+                <title>Passio sancti Valentini (BHL 8460)</title>
+              </msItem>
+            </msContents>
+            <physDesc>
+              <objectDesc>
+                <supportDesc>
+                  <p>Manoscritto membranaceo (<origDate>saec. Xex</origDate>).</p>
+                </supportDesc>
+              </objectDesc>
+            </physDesc>
+            <additional>
+              <listBibl>
+                <bibl><title>Catalogue des manuscrits de la Bibliothèque Royale de la Belgique</title>, V, ed. J. Van den Gheyn, Bruxelles, 1905, pp. 186-188.</bibl>
+                <bibl><title>Catalogus codicum hagiographicorum Bibliothecae Regiae Bruxellensis</title>, Bruxelles, 1886-1889, pp. 267-269.</bibl>
+              </listBibl>
+            </additional>
+          </msDesc>
+        </witness>
+
+        <witness xml:id="N">
+          <abbr type="siglum">N</abbr>
+          <msDesc>
+            <msIdentifier>
+              <settlement>Napoli</settlement>
+              <repository>Biblioteca Nazionale</repository>
+              <idno>XV.AA.12</idno>
+            </msIdentifier>
+            <msContents>
+              <msItem>
+                <locus from="74r" to="75v">ff. 74r-75v</locus>
+                <title>Passio sancti Valentini (BHL 8460)</title>
+                <note>Contiene nel santorale anche testi relativi ad altri santi umbro-tusco-sabini: Sabino di Spoleto (BHL 7452), Anatolia di Rieti (BHL 418) e i XII Siri.</note>
+              </msItem>
+            </msContents>
+            <physDesc>
+              <objectDesc>
+                <supportDesc>
+                  <p>Manoscritto membranaceo (<origDate>saec. Xex-XIin</origDate>).</p>
+                </supportDesc>
+              </objectDesc>
+            </physDesc>
+            <additional>
+              <listBibl>
+                <bibl>A. Poncelet, <title>Catalogus bibliothecarum Neapolitanarum</title>, pp. 200-205.</bibl>
+              </listBibl>
+            </additional>
+          </msDesc>
+        </witness>
+
+        <witness xml:id="V">
+          <abbr type="siglum">V</abbr>
+          <msDesc>
+            <msIdentifier>
+              <settlement>Città del Vaticano</settlement>
+              <repository>Biblioteca Apostolica Vaticana</repository>
+              <idno>ArchCapS.Pietro A.2</idno>
+            </msIdentifier>
+            <msContents>
+              <msItem>
+                <locus from="183r" to="185r">ff. 183r-185r</locus>
+                <title>Passio sancti Valentini (BHL 8460)</title>
+                <note>Contiene nel santorale anche la leggenda di Firmina di Amelia (BHL 3001b).</note>
+              </msItem>
+            </msContents>
+            <physDesc>
+              <objectDesc>
+                <supportDesc>
+                  <p>Manoscritto membranaceo (<origDate>saec. Xex-XIin</origDate>).</p>
+                </supportDesc>
+              </objectDesc>
+            </physDesc>
+            <additional>
+              <listBibl>
+                <bibl>A. Poncelet, <title>Catalogus codicum hagiographicorum Latinorum bibliothecarum Romanarum</title>, Bruxellis, 1909, pp. 1-6.</bibl>
+              </listBibl>
+            </additional>
+          </msDesc>
+        </witness>
+
+        <witness xml:id="Re">
+          <abbr type="siglum">Re</abbr>
+          <msDesc>
+            <msIdentifier>
+              <settlement>Città del Vaticano</settlement>
+              <repository>Biblioteca Apostolica Vaticana</repository>
+              <idno>Reg. lat. 516</idno>
+            </msIdentifier>
+            <msContents>
+              <msItem>
+                <locus from="69r" to="71v">ff. 69r-71v</locus>
+                <title>Passio sancti Valentini (BHL 8460)</title>
+                <note>Ostenta un santorale martiriale romano.</note>
+              </msItem>
+            </msContents>
+            <physDesc>
+              <objectDesc>
+                <supportDesc>
+                  <p>Manoscritto membranaceo (<origDate>saec. Xex</origDate>).</p>
+                </supportDesc>
+              </objectDesc>
+            </physDesc>
+            <additional>
+              <listBibl>
+                <bibl>A. Poncelet, <title>Catalogus bibliothecae Vaticanae</title>, pp. 344-346.</bibl>
+              </listBibl>
+            </additional>
+          </msDesc>
+        </witness>
+
+        <witness xml:id="P">
+          <abbr type="siglum">P</abbr>
+          <msDesc>
+            <msIdentifier>
+              <settlement>Perugia</settlement>
+              <repository>Museo del Capitolo della Cattedrale di San Lorenzo</repository>
+              <idno>33 (olim 40 e 43)</idno>
+            </msIdentifier>
+            <msContents>
+              <msItem>
+                <locus>kp XXVI</locus>
+                <title>Passio sancti Valentini (BHL 8460)</title>
+                <note>Cosiddetto Passionario di Perugia.</note>
+              </msItem>
+            </msContents>
+            <physDesc>
+              <objectDesc>
+                <supportDesc>
+                  <p>Codice agiografico umbro (<origDate>saec. XI</origDate>).</p>
+                </supportDesc>
+              </objectDesc>
+            </physDesc>
+            <history>
+              <origin>
+                <p>Origine umbra (<origPlace>Perugia, cattedrale?</origPlace>).</p>
+              </origin>
+            </history>
+            <additional>
+              <listBibl>
+                <bibl>A. Brunacci, <title>Santi Umbri nel Passionario di Perugia</title>, in <title>Aspetti dell'Umbria dal sec. VIII alla fine del sec. XI</title>, Perugia, 1966, pp. 255-271, qui p. 259.</bibl>
+              </listBibl>
+            </additional>
+          </msDesc>
+        </witness>
+      </listWit>
+    <listOrg>
+        <head>Istituzioni, autorità e gruppi</head>
+
+        <org xml:id="Senatus">
+          <orgName>Senatus Romanus (senatores)</orgName>
+          <note>L'assemblea senatoria di Roma, la cui indignazione per le numerose conversioni al cristianesimo tra gli studenti e i giovani dell'aristocrazia urbana provoca l'arresto di san Valentino.</note>
+        </org>
+
+        <org xml:id="Praefectura_Urbi">
+          <orgName>Praefectura Urbi (Vrbis praefectus)</orgName>
+          <note>La massima magistratura cittadina di Roma, retta da Furio Placido, che dispone la detenzione e la decapitazione notturna di san Valentino.</note>
+        </org>
+
+        <org xml:id="Ecclesia_Interamnensis">
+          <orgName>Ecclesia Interamnensis</orgName>
+          <note>La comunità cristiana e la sede episcopale di Terni (Interamna), nel cui suburbio Proculo, Efibo e Apollonio depongono il corpo del vescovo Valentino.</note>
+        </org>
+
+        <org xml:id="Gentiles">
+          <orgName>Gentiles (pagani di Interamna)</orgName>
+          <note>I pagani di Interamna che catturano Proculo, Efibo e Apollonio mentre vegliano in preghiera presso la sepoltura di san Valentino, consegnandoli all'autorità giudiziaria.</note>
+        </org>
+
+        <org xml:id="Officium_Consularis">
+          <orgName>Officium consularis</orgName>
+          <note>L'apparato amministrativo e giudiziario al seguito del magistrato Lucenzio, che gestisce il processo notturno contro Proculo, Efibo e Apollonio e si dilegua subito dopo l'esecuzione.</note>
+        </org>
+      </listOrg>
+
+      <listPerson>
+        <head>Indice prosopografico e note storiche</head>
+
+        <person xml:id="Valentinus">
+          <persName>Valentinus (sanctus Valentinus, episcopus Interamnensis)</persName>
+          <note>Vescovo di Terni (Interamna) e martire, protagonista della Passio (BHL 8460). Chiamato a Roma dall'oratore Cratone per guarire il figlio Cerimone, converte la famiglia di Cratone, gli scolari ateniesi Proculo, Efibo e Apollonio e Abondio, figlio del prefetto Furio Placido. Condannato dal Senato e dal prefetto Placido, viene decapitato lungo la via Flaminia e sepolto a Interamna.</note>
+        </person>
+
+        <person xml:id="Craton">
+          <persName>Craton (orator utriusque linguae)</persName>
+          <note>Retore e maestro bilingue (greco e latino) attivo a Roma, presso il quale soggiornano e studiano i tre nobili giovani ateniesi Proculo, Efibo e Apollonio. Dopo la guarigione miracolosa del figlio Cerimone, si converte al cristianesimo con tutta la sua casa.</note>
+        </person>
+
+        <person xml:id="Cerimon">
+          <persName>Cerimon (Cratonis filius)</persName>
+          <note>Unico figlio dell'oratore Cratone, colpito da una grave infermità che gli piega il dorso fino a costringerlo con il capo tra le ginocchia; viene guarito da san Valentino a Roma dopo una notte di preghiera.</note>
+        </person>
+
+        <person xml:id="Proculus">
+          <persName>Proculus (Atheniensis; martire)</persName>
+          <note>Nobile giovane ateniese, scolaro di Cratone a Roma insieme a Efibo e Apollonio. Convertito da san Valentino, ne trasporta il corpo da Roma a Interamna insieme a Efibo, Apollonio e Abondio per dargli sepoltura; subisce a sua volta il martirio ed è venerato nell'agiografia ternana e dell'Umbria meridionale.</note>
+        </person>
+
+        <person xml:id="Efibus">
+          <persName>Efibus / Ephebus (Atheniensis; martire)</persName>
+          <note>Nobile giovane ateniese, condiscepolo di Proculo e Apollonio presso Cratone a Roma; convertito da san Valentino, partecipa alla traslazione e alla sepoltura del santo a Interamna e condivide il martirio con Proculo e Apollonio.</note>
+        </person>
+
+        <person xml:id="Apollonius">
+          <persName>Apollonius (Atheniensis; martire)</persName>
+          <note>Nobile giovane ateniese, condiscepolo di Proculo ed Efibo presso Cratone a Roma; si converte al cristianesimo grazie a san Valentino, ne cura la sepoltura a Interamna e subisce il martirio insieme ai compagni.</note>
+        </person>
+
+        <person xml:id="Fonteius">
+          <persName>Fonteius (tribunicius)</persName>
+          <note>Personaggio di rango tribunizio a Roma che segnala a Cratone la fama taumaturgica di Valentino, vescovo di Interamna, raccontando come questi avesse già guarito suo fratello da una malattia analoga a quella di Cerimone.</note>
+        </person>
+
+        <person xml:id="Abundius">
+          <persName>Abundius (filius Furii Placidi)</persName>
+          <note>Figlio del prefetto urbano Furio Placido; convertito da san Valentino, collabora con Proculo, Efibo e Apollonio alla sepoltura del martire a Interamna. Figura centrale nella tradizione agiografica ternana e umbra.</note>
+        </person>
+
+        <person xml:id="Furius_Placidus">
+          <persName>Furius Placidus (praefectus urbi)</persName>
+          <note>Prefetto dell'Urbe che, su impulso del Senato romano e irato per la conversione del figlio Abondio, fa arrestare, flagellare e infine decapitare san Valentino durante la notte.</note>
+        </person>
+
+        <person xml:id="Lucentius">
+          <persName>Lucentius (consularis)</persName>
+          <note>Magistrato con rango di consularis al quale vengono consegnati Proculo, Efibo e Apollonio a Interamna; temendo una sollevazione popolare, li fa giudicare e condannare a morte durante la notte per poi fuggire con il suo ufficio.</note>
+        </person>
+      </listPerson>
+
+      <listPlace>
+        <head>Indice geografico</head>
+
+        <place xml:id="Interamna">
+          <placeName>Interamna (Terni)</placeName>
+          <note>Città dell'Umbria meridionale di cui san Valentino è vescovo e cittadino, e dove il suo corpo viene riportato da Roma per la sepoltura.</note>
+        </place>
+
+        <place xml:id="Roma">
+          <placeName>Roma (Urbs)</placeName>
+          <note>Sede dell'attività didattica di Cratone, della guarigione di Cerimone, dell'intervento del Senato e del prefetto Furio Placido e del martirio di san Valentino.</note>
+        </place>
+
+        <place xml:id="Athenae">
+          <placeName>Athenae (Atene)</placeName>
+          <note>Città d'origine dei tre nobili giovani Proculo, Efibo e Apollonio, giunti a Roma per perfezionare gli studi latini presso Cratone.</note>
+        </place>
+
+        <place xml:id="Egyptus">
+          <placeName>Aegyptus (Egitto)</placeName>
+          <note>Regione menzionata nel discorso teologico di san Valentino a proposito delle piaghe d'Egitto e della liberazione operata da Mosè.</note>
+        </place>
+      </listPlace>
+    </sourceDesc>
+  </fileDesc>
+</teiHeader>
+   <text xml:lang="la">
+   
+      <body>
+      <div type="edition" xml:id="intro_1">
+      <head>1. La Passio sancti Valentini (BHL 8460) e le edizioni precedenti</head>
+      <p>Posto che BHL 8460b è solo una variante incipitaria di BHL 8460, e che BHL 8461 è un testo, opera di Balderico di Dol, di fine sec. XI relativo alla traslazione a Jumièges di una parte del corpo di san Valentino, la narrazione fondante la leggenda di Valentino è la Passione BHL 8460.</p>
+      <p>L’edizione bollandista negli <title>Acta Sanctorum</title> di Febbraio era effettuata « ex quinque MSS. &amp; Mombritio »<note n="601">AASS, Febr. II, col. 756-757.</note>. Nello studio in cui editavo il testo qualche anno fa, discutevo di questi testimoni e delle altre stampe d’età moderna realizzate da Bonino Mombrizio e Surio<note n="602">Ed. B. MOMBRITIUS, <title>Vitae Sanctorum seu Sanctuarium</title>, Paris, 1910, II pp. 343-344 e L. SURIUS, <title>De probatis Sanctorum historiis</title>, Coloniae, 1618, I pp. (1570) 984-986 o (1875) 349-352.</note> e dell’edizione bollandista stessa.</p>
+      <p>L’edizione qui presentata di <title>Val</title> costituisce un’integrazione della mia precedente<note n="603">D’ANGELO, <title>La Passio s. Valentini</title> cit., pp. 211-222.</note>, contenendo la collazione anche del codice Ambrosiano P.113.Sup., che qualche anno fa mi fu impossibile consultare. Assolutamente difficile pretendere di utilizzare tutti gli oltre centoventi testimoni manoscritti<note n="604">La Passione di Valentino era contenuta anche nel cosiddetto Leggendario di Gualdo Tadino, oggi ricostruibile da una serie di altri volumi manoscritti, tra cui, per quanto riguarda il testo sul patrono ternano il Vat. lat. 3903: F. DOLBEAU, <title>Le Légendier de San Francesco de Gualdo: tentative de reconstitution</title>, in BDSPU, LXXIII (1976), p. 157-175, qui p. 172.</note>; e, d’altra parte, per buona parte di essi il lavoro si rivelerebbe, con tutta probabilità, inutile<note n="605">È il caso, ad es., del Vat. lat. 7810: testimone -per quanto “alto”- molto “falloso” (<hi rend="italic">Placidus</hi> diventa <hi rend="italic">Flaccidus</hi>, <hi rend="italic">Fonteius</hi> diventa <hi rend="italic">Fontesius</hi>, Valentino è vescovo <hi rend="italic">Teranensis</hi>, etc.), che spesso sceglie di sintetizzare espressioni più pretenziose del testo (così per <title>Val</title> 14-15), o elimina del tutto elementi che devono sembrargli inutili (così fa, ad es., con l’invece importante storicamente <title>Val</title> 60, l’intervento del Senato contro Valentino); inserisce di suo la data del <hi rend="italic">dies Natalis</hi> (<hi rend="italic">XIII kalendas Martii</hi>).</note>.</p>
+    </div>
+
+    <div type="edition" xml:id="intro_2">
+      <head>2. I testimoni collazionati e il censimento dei codici (secc. X–XII)</head>
+      <p>L’edizione si fonda sul gruppo di testimoni cronologicamente più alti (databili a non oltre il sec. X)<note n="606">Il testo era contenuto anche ai ff. 67v-71v del codice Chartres, B. Municipale, 506, saec. X, ma sono attualmente perduti (vedi supra).</note>:</p>
+      <list>
+        <item><hi rend="bold">B</hi> = Bologna, B. Universitaria, 1576 (<hi rend="italic">saec. Xmed-XImed</hi>) forse proveniente da Nonantola. <title>Val</title>: ff. 117v-120v.</item>
+        <item><hi rend="bold">Br</hi> = Bruxelles, KBR, 7984 (<hi rend="italic">saec. Xex</hi>). <title>Val</title>: ff. 48v-51r.</item>
+        <item><hi rend="bold">M</hi> = Milano, B. Ambrosiana, P.113.sup (<hi rend="italic">saec. Xex</hi>)<note n="607">Interessante, sebbene più tardo (vedi più avanti), anche il codice anch’esso a Milano Ambrosiano B.49.inf, probabilmente di provenienza umbra. Contiene i testi relativi a Fortunato di Spoleto BHL 3087, Secondo d’Amelia BHL 7559 (sul dossier di questo santo: E. D’ANGELO, <title>Il dossier “amerino” di san Secondo (B.H.L. 7559, 7559a, 7559b, 7560, 7560b)</title>, in BDSPU, CVII, 2010, pp. 57-86 ma soprattutto E. D’ANGELO - E. LUCCI, <title>Amelia e i suoi santi. Storia, culto, liturgia, agiografia</title>, Spoleto, in corso di stampa), Ercolano di Perugia BHL 3822, Cristina di Bolsena BHL 1748, Concordio di Spoleto BHL 1906.</note>. <title>Val</title>: ff. 55r-58r.</item>
+        <item><hi rend="bold">N</hi> = Napoli, B. Nazionale, XV.AA.12 (<hi rend="italic">saec. Xex-XIin</hi>). <title>Val</title>: ff. 74r-75v.</item>
+        <item><hi rend="bold">V</hi> = Vaticano, BAV, ArchCapS.Pietro A.2 (<hi rend="italic">saec. Xex-XIin</hi>). <title>Val</title>: ff. 183r-185r.</item>
+        <item><hi rend="bold">Re</hi> = Vaticano, BAV, Reg. lat. 516 (<hi rend="italic">saec. Xex</hi>). <title>Val</title>: ff. 69r-71v.</item>
+      </list>
+      <p>A questi aggiungo la collazione di un codice agiografico umbro di sec. XI:</p>
+      <list>
+        <item><hi rend="bold">P</hi> = Perugia, Museo del Capitolo della Cattedrale di San Lorenzo, 33 (<hi rend="italic">olim</hi> 40 e 43) (<hi rend="italic">saec. XI</hi>). È il cosiddetto Passionario di Perugia (Perugia, cattedrale?). <title>Val</title>: kp XXVI.</item>
+      </list>
+      <p>Attenzione potrebbe essere in futuro dedicata ai testimoni maggiormente congruenti geograficamente, e cioè al Cape Town, SouthAfricanL. 48b4; al Cassinese 117; al leggendario di San Felice di Narco; al Vallicelliano Tomo I; al Sublacense X.10; al Vat. lat. 7810 e, come detto, all’Ambrosiano B.49.inf.</p>
+      <p>Assai più cospicuo il gruppo di testimoni databili al sec. XI o XI-XII, in tutto 37<note n="608">Per una sommaria descrizione dei quali e i relativi rinvii bibliografici rinvio a D’ANGELO, <title>La Passio sancti Valentini</title> cit., pp. 183-189.</note>:</p>
+      <list>
+        <item>Benevento, B.Capitolare, V (<hi rend="italic">saec. XIex-XIIin</hi>)</item>
+        <item>Bologna, B.Universitaria, 1604 (<hi rend="italic">saec. XImed-XIImed</hi>)</item>
+        <item>Bruxelles, KBR, 64 (<hi rend="italic">saec. XI</hi>)</item>
+        <item>Cape Town, SouthAfricanL., 48b4 (<hi rend="italic">saec. XII</hi>), Roma, S. Cecilia a Trastevere</item>
+        <item>Firenze, BML, Amiat. 2 (<hi rend="italic">saec. XII</hi>)</item>
+        <item>Firenze, BML, Conv.Soppr. 332 (<hi rend="italic">saec. XII</hi>)</item>
+        <item>Firenze, BML, Pl.30.sin.4 (<hi rend="italic">saec. XII</hi>)</item>
+        <item>Firenze, BML, Pl.30.sin.5 (<hi rend="italic">saec. XII</hi>)</item>
+        <item>Ivrea, B.Capitolare, CXII (<hi rend="italic">saec. XII</hi>)</item>
+        <item>Lucca, B.Capitolare, C (<hi rend="italic">saec. XIIin</hi>)</item>
+        <item>Montecassino, Archivio Monumentale, 117 (<hi rend="italic">saec. XII</hi>), Umbria, Spoleto?</item>
+        <item>Montecassino, Archivio Monumentale, 145 (<hi rend="italic">saec. XII</hi>)</item>
+        <item>Montecassino, Archivio Monumentale, 146 (<hi rend="italic">saec. XIex</hi>)</item>
+        <item>Napoli, B.Nazionale, VIII.B.6 (<hi rend="italic">saec. XII</hi>)</item>
+        <item>Novara, B. Capitolare, II (<hi rend="italic">saec. XImed-XIImed</hi>)</item>
+        <item>Novara, B. Capitolare, LXIII (<hi rend="italic">saec. XII</hi>)</item>
+        <item>Paris, BNF, Par. lat. 791 (<hi rend="italic">saec. XII</hi>)</item>
+        <item>Paris, BNF, Par. lat. 18305 (<hi rend="italic">saec. XII</hi>)</item>
+        <item>Roma, ArchS.GiovLat A.79 (<hi rend="italic">saec. XImed-XIImed</hi>)</item>
+        <item>Roma, B.Nazionale, Sess. 5 (<hi rend="italic">saec. XI</hi>)</item>
+        <item>Roma, B.Nazionale, Sess. 7 (<hi rend="italic">saec. XIex-XIIin</hi>)</item>
+        <item>Roma, B.Nazionale, Casanat. 718 (<hi rend="italic">saec. XII</hi>)</item>
+        <item>Roma, B.Nazionale, Casanat. 726 (<hi rend="italic">saec. XIex-XIIin</hi>)</item>
+        <item>Roma, B.Vallicelliana, Tomo I (<hi rend="italic">saec. XIex-XIIin</hi>), Norcia, S. Eutizio</item>
+        <item>Roma, B.Vallicelliana, Tomo III (<hi rend="italic">saec. XI</hi>)</item>
+        <item>Roma, B.Vallicelliana, Tomo V (<hi rend="italic">saec. XI</hi>)</item>
+        <item>Roma, B.Vallicelliana, Tomo IX (<hi rend="italic">saec. XI</hi>)</item>
+        <item>Roma, B.Vallicelliana, Tomo XVII (<hi rend="italic">saec. XIex-XIIin</hi>)</item>
+        <item>Rouen, B.Publique, U.135 (<hi rend="italic">saec. XIex-XIIin</hi>)</item>
+        <item>Subiaco, Monastero di Santa Scolastica, X.10 (<hi rend="italic">saec. XI</hi>)</item>
+        <item>Vaticano, Barb. lat. 586 (<hi rend="italic">saec. XIex-XIIin</hi>)</item>
+        <item>Vaticano, Vat. lat. 1195 (<hi rend="italic">saec. XIex-XIIin</hi>)</item>
+        <item>Vaticano, Vat. lat. 1196 (<hi rend="italic">saec. XII</hi>)</item>
+        <item>Vaticano, Vat. lat. 1197 (<hi rend="italic">saec. XIex</hi>)</item>
+        <item>Vaticano, Vat. lat. 6073 (<hi rend="italic">saec. XIex-XIIin</hi>)</item>
+        <item>Vaticano, Vat. lat. 6074 (<hi rend="italic">saec. XIex-XIIin</hi>)</item>
+        <item>Vaticano, Vat. lat. 7810 (<hi rend="italic">saec. XII</hi>)</item>
+      </list>
+    </div>
+
+    <div type="edition" xml:id="intro_3">
+      <head>3. Analisi agiogeografica e datazione del testo</head>
+      <p>L’applicazione del criterio agiogeografico (datazione e origine geografica dei testimoni) consente di trarre delle ipotesi dalla struttura della tradizione. L’ampiezza sia quantitativa (circa 120 testimoni) sia “geografica” (i codici sono disseminati e comunque variamente originari di tutta l’Europa nord-occidentale, oltre che dell’Italia) dimostra l’enorme diffusione della leggenda<note n="609">Diffusione facilitata dalla presenza del santo nei cosiddetti martirologi storici: SUSI, <title>Il culto di san Valentino</title> cit., p. 288.</note>; tale elemento, combinato con l’esistenza di testimoni dell’età carolingia, rende assai probabile una datazione “alta” del testo (sec. VI). La diffrazione agiogeografica rende identificabile il punto di irradiamento della leggenda, l’Italia (centrale): italiani i due testimoni di sec. IX, cinque su sette i manoscritti di sec. IX-X, e trentadue su trentasette quelli di sec. XI-XII, cioè l’86%.</p>
+      <p>Più difficile l’identificazione di uno <hi rend="italic">scriptorium</hi> preciso. Con buona probabilità deve essere stato un luogo di scrittura in area romano-laziale (ma della maggior parte dei manoscritti non si conosce l’origine precisa); sono comunque sedici su quarantaquattro, cioè il 44% circa, quelli attualmente a Roma e Montecassino di cui non è accertata un’origine extralaziale. Dei sette codici del primo gruppo, alcuni contengono nel santorale testi relativi ad altri santi umbro-tusco-sabini (il Reg. lat. 516 ostenta un santorale martiriale romano): ArchCapSPietro A.2: Firmina di Amelia BHL 3001b; Napoli XV.AA.12: Sabino di Spoleto BHL 7452, Anatolia di Rieti BHL 418, i XII Siri.</p>
+      <p>Passando al secondo gruppo (sec. XI-XII), sono presenti alcuni manoscritti di origine umbra<note n="610">DOLBEAU, <title>Le légendier de San Francesco de Gualdo</title> cit., p. 169.</note>:</p>
+      <list>
+        <item>Firenze, BML, Aed. 133<note n="611">Fiorentino, Aedili 133: <title>Val</title> ff. 91v-93r. In questo codice, originario di Santa Maria in Fiore di Firenze, sono attestate le leggende relative ai seguenti santi tusco-umbro-sabini: Sabino di Spoleto BHL 7453b, Gregorio di Spoleto BHL 3677, Feliciano di Spoleto BHL 2846, Costanzo di Perugia BHL 1973a, Ercolano di Perugia BHL 3822, Cristina di Bolsena BHL 1748 e Fortunato di Spoleto BHL 3087 (bibliografia: GUGLIELMETTI, <title>I testi agiografici latini</title> cit., pp. 27-46).</note> XIIex.</item>
+        <item>Montecassino, 117 XI Spoleto?</item>
+        <item>Milano, B.49. Inf. XII (Concordio, Ercolano, Fortunato)</item>
+        <item>Roma, Vallicelliana, Tomo I XI-XIIin.</item>
+        <item>Spoleto, Arch.Duomo, S.Felice di Narco XII Spoleto, Sant’Eutizio</item>
+      </list>
+      <p>Nell’articolo dal quale si sviluppa questo studio è presente l’elenco dei codici contenenti <title>Val</title> e datati a dopo il secolo XI: essi sono 74<note n="612">D’ANGELO, <title>La Passio sancti Valentini martyris</title> cit.</note>.</p>
+      <p>D’altra parte la storia si sviluppa tutta tra Terni e Roma: Valentino arriva nell’Urbe da <hi rend="italic">Interamna</hi> chiamatovi da Cratone, e ritorna alla sua città da morto per la sepoltura. E la sua sepoltura, nonché quella dei suoi seppellitori, sono gestite da figure che diventeranno poi ubiquitarie nell’agiografia non solo ternana ma di tutta l’Umbria meridionale: Abbondio e Procolo.</p>
+    </div>
+
+    <div type="edition" xml:id="intro_4">
+      <head>4. Nota sulla recensio, rapporti tra i testimoni e stile</head>
+      <p>La <hi rend="italic">recensio</hi> e la <hi rend="italic">collatio</hi> (parziale) conducono ad accertare il fatto che il testo è tràdito in maniera generalmente assai compatta. Tale compattezza della tradizione ha però ovviamente come risvolto negativo una sostanziale assenza di <hi rend="italic">Leitfehler</hi>, e di conseguenza la difficoltà di tracciare uno <hi rend="italic">stemma codicum</hi> preciso e saldo. Dei codici qui usati per l’edizione (V, Re, Br, B, N, P, M), nessuno dovrebbe essere copia di un altro, per le lacune singolari che caratterizzano ciascuno (Re om.: 4 <hi rend="italic">igitur</hi>; 11 <hi rend="italic">dixit</hi>; 68 <hi rend="italic">omnis</hi>. Br om.: 3 <hi rend="italic">Interamnensis</hi>; 12 <hi rend="italic">cui sanctus</hi>; 40 <hi rend="italic">aut uidisti</hi>; 53 <hi rend="italic">hymnorum</hi>; 63 <hi rend="italic">honestissimae</hi>. B om.: 35 <hi rend="italic">in</hi>; 55 <hi rend="italic">cum</hi>; 65 <hi rend="italic">quos</hi>. N om.: 2 <hi rend="italic">intentissima</hi>; 4 <hi rend="italic">huius magisterio et hospitio fouebantur</hi>; 26 <hi rend="italic">in dispersione positis</hi>; 29 <hi rend="italic">a non credentibus incredulitatem eiceret</hi>; i due par. completi 36 e 37, etc. P om.: 7 <hi rend="italic">affectu</hi>; 41 <hi rend="italic">facta</hi>; 59 <hi rend="italic">tantum</hi>; 57 <hi rend="italic">litterarum</hi>; 66 <hi rend="italic">quos - flagitari</hi>. M om.: 50 <hi rend="italic">eleuauit - cilicio</hi>)<note n="613">Le lacune singolari di Re e B non possono essere dette, a dire il vero, certamente non poligenetiche.</note>.</p>
+      <p>Un legame sembra esistere, ed essere accertabile, per B e N: 15 om. <hi rend="italic">si</hi>; 25 om. <hi rend="italic">et</hi>; 27 <hi rend="italic">memorare</hi>; 30 <hi rend="italic">reddeat</hi>; 32 <hi rend="italic">quam</hi>; 51 <hi rend="italic">spatius</hi>. Con B, Re ha in comune gli errori di 23 <hi rend="italic">uocem</hi> e 58 <hi rend="italic">probaretur</hi> (ma in comune con P 33 <hi rend="italic">adoratur</hi>). Complicata anche la dimostrazione dell’esistenza di un archetipo a monte della tradizione conservata: potrebbero farlo ipotizzare gli errori di 1 <hi rend="italic">multitudinem</hi> Re Br B N (corretto da P con la citazione biblica appropriata) e di 7 <hi rend="italic">affectum</hi> Re B N P (corretto da Br); e la situazione di evidente diffrazione di varianti presente sempre al par. 7, dove sembra erroneo l’<hi rend="italic">ibo</hi> della <hi rend="italic">paradosis</hi> (<hi rend="italic">enim Iesus et</hi>] dubitanter conieci: <hi rend="italic">se nimio</hi> Br <hi rend="italic">enim ibo et</hi> Re B N <hi rend="italic">enim Iud et</hi> P; <hi rend="italic">affectu</hi>] <hi rend="italic">affectum</hi> Re B N om. P).</p>
+      <p>Sotto il profilo linguistico, <title>Val</title> si presenta scritta in un buon latino, con uno stile non pretenzioso, certo, ma sciolto e chiaro e, laddove necessario, sufficientemente dotto. Mauro Donnini parla di « capacità artistiche dell’agiografo », rilevando le eleganti strutture sintattiche tricoliche, i chiasmi, i parallelismi, e addirittura una sorta di realismo linguistico, dato che l’<hi rend="italic">orator utriusque linguae</hi> Cratone è fatto parlare con buona finezza retorica (e si veda l’<hi rend="italic">aprosdoketon</hi> del nome della malattia di Cerimone, etc.)<note n="614">DONNINI, <title>Struttura letteraria</title> cit., pp. 544-547.</note>. Anche questo depone a favore di una datazione alta del testo.</p>
+    </div>
+         <div type="edition">
+            <head>
+               <app type="rubric">
+                  <lem>Passio sancti Valentini episcopi martyris</lem>
+                  <rdg wit="#Re">Incipit Passio beati Valentini episcopi et martyris mense Februario die XIIII</rdg>
+                  <rdg wit="#Br">Incipit Passio sancti Valentini episcopi Teramnensis civitatis XVI kalendas Martii</rdg>
+                  <rdg wit="#N">XIII kalendas Martii Passio sancti Valentini martyris</rdg>
+                  <rdg wit="#V">Mense Februario die XIIII Passio Valentini</rdg>
+                  <rdg wit="#M">Pasio sancti Valentini martyris</rdg>
+                  <rdg wit="#P">decimo steptimo Kalendas Martias Natale sancti Valentini episcopi et martyris</rdg>
+               </app>
+            </head>
+            
+            <p><seg type="versicle" n="1">1</seg> Propheta loquitur <app><lem>ad Deum</lem><rdg wit="#N" type="omission"/><rdg wit="#V #P">ad Dominum</rdg></app>: “Secundum <app><lem>altitudinem</lem><rdg wit="#Re #Br #B #N">multitudinem</rdg><rdg wit="#P">altitudinem inquit</rdg></app> tuam <app><lem>multiplicasti filios hominum</lem><rdg wit="#N" type="omission"/></app>”<note type="source" resp="#editor">Ps 11.9.</note>. <seg type="versicle" n="2">2</seg> In ipsa multiplicatione <app><lem>illi</lem><rdg wit="#Re #B">in illis</rdg></app> specialiter ad <app><lem>Deum</lem><rdg wit="#M">hoc</rdg></app> pertinent, qui uitam suam <app><lem>uouerunt</lem><rdg wit="#N">uouerint</rdg></app> Creatori, ita <app><lem>ut</lem><rdg wit="#P" type="omission"/></app> corpus et <app><lem>animam</lem><rdg wit="#Re">anima</rdg></app> <app><lem>intentissima</lem><rdg wit="#N" type="omission"/><rdg wit="#V #M">intentissimam</rdg></app> Christo <app><lem>faciant</lem><rdg wit="#N">faciunt</rdg></app>. <seg type="versicle" n="3">3</seg> Vnde <app><lem>beatus</lem><rdg wit="#Br">beatissimus</rdg></app> uir <app><lem><placeName ref="#Interamna">Interamnensis</placeName></lem><rdg wit="#B">Interamensis</rdg><rdg wit="#Br" type="omission"/><rdg wit="#N">Teranensis</rdg><rdg wit="#V" cert="low">ur ambiensis (?)</rdg><rdg wit="#P">Valentinus Interamnensis urbis</rdg></app> episcopus, <app><lem>sanctus</lem><rdg wit="#B #N #P" type="omission"/></app> <app><lem><persName ref="#Valentinus">Valentinus</persName></lem><rdg wit="#P" type="omission"/></app>, bene uiuendo meruit uirtutibus adherere, quae uirtutes latentem hominem <app><lem resp="#editor">omnis mundi<note type="editorial">scripsi</note></lem><rdg wit="#Re">omnis mundo</rdg><rdg wit="#Br">omni modo</rdg><rdg wit="#B #M #P">omni mondo</rdg><rdg wit="#N #V" type="orthographic">omnis mund[.]</rdg></app> credentium <app><lem>animis</lem><rdg wit="#Re">animis perspicuum</rdg><rdg wit="#P">anima</rdg></app> tradiderunt.</p>
+            
+            <p><seg type="versicle" n="4">4</seg> <app><lem>Igitur</lem><rdg wit="#Re" type="omission"/><rdg wit="#M">igitur cum</rdg></app> <placeName ref="#Athenae">Athenienses</placeName> <app><lem>nobiles</lem><rdg wit="#P">nobili</rdg></app> nati <app><lem><persName ref="#Proculus">Proculus</persName></lem><rdg wit="#P">Probus</rdg><note type="commentary" resp="#editor">Proculus: il nome Procolo è particolarmente diffuso nell’agiografia umbra (e non): vedi nel cap. II il par. relativo a questo santo, ma anche il par. relativo ai Dodici Siri.</note></app>, <app><lem><persName ref="#Efibus">Efibus</persName></lem><rdg wit="#B #N">et Phibus</rdg><rdg wit="#M" type="orthographic">Ephybus</rdg><rdg wit="#P" type="orthographic">Ephebus</rdg><note type="commentary" resp="#editor">Efibus et Apollonius: sui forti dubbi di Hyppolyte Delehaye relativamente alla collocazione di questi màrtiri in Terni, vedi nel cap. II il par. relativo a Valentino.</note></app> et <app><lem><persName ref="#Apollonius">Apollonius</persName></lem><rdg wit="#B" type="orthographic">Apolinius</rdg><rdg wit="#N" type="orthographic">Appollonius</rdg></app>, scolastici uiri, <app><lem>cum</lem><rdg wit="#M #P" type="omission"/></app> <app><lem>apud Grecos Latina studia desiderassent</lem><rdg wit="#M">apud Grecorum scolas Latina studia desiderassent</rdg><rdg wit="#P">apud Grecorum cum Latina studia desiderassent</rdg><rdg wit="#V">post Greca studia in Latinis plurimum desudassent</rdg></app>, apud <app><lem><persName ref="#Craton">Cratonem</persName></lem><rdg wit="#B" type="orthographic">Gratonem</rdg><note type="commentary" resp="#editor">Cratonem: questo personaggio potrebbe derivare dall’omonimo ed omologo (uomo probo, filosofo e conoscitore sia della cultura greca che latina) presente negli apocrifi Actus Silvestri, in cui esercita il ruolo di un imparziale giudice chiamato dall’imperatore Costantino il Grande a giudicare in una disputa teologica tra Cristiani ed Ebrei.</note></app> ciuem suum, oratorem utriusque linguae, in urbe <placeName ref="#Roma">Roma</placeName> hospitabantur, <app><lem>huius</lem><rdg wit="#N #V" type="omission"/></app> <app><lem>et</lem><rdg wit="#Br #N #V" type="omission"/></app> <app><lem>magisterio</lem><rdg wit="#N #V" type="omission"/></app> <app><lem>et hospitio</lem><rdg wit="#N" type="omission"/></app> <app><lem>fouebantur</lem><rdg wit="#N" type="omission"/><rdg wit="#M">utebamtur</rdg><rdg wit="#V">instruebantur</rdg></app>. <seg type="versicle" n="5">5</seg> Factum est autem, ut <app><lem>unicus</lem><rdg wit="#N">unicus <note type="editorial">corr. ex inimicus</note></rdg><rdg wit="#P">unus</rdg></app> <persName ref="#Craton">Cratonis</persName> <app><lem>filius</lem><rdg wit="#Re">filius <note type="editorial">filium corr.</note></rdg></app>, <persName ref="#Cerimon">Cerimon</persName> nomine, iuuenis <app><lem>scolasticus</lem><rdg wit="#B" cert="low">ac (?)</rdg></app>, <app><lem>sic</lem><rdg wit="#N" type="omission"/><rdg wit="#V">hanc</rdg></app> <app><lem>incurreret egritudinem</lem><rdg wit="#N" type="omission"/></app> <app><lem>ut</lem><rdg wit="#B">et</rdg></app>, <app><lem>incuruatus</lem><rdg wit="#Re">incumbatur</rdg></app> dorso, caput <app><lem>habens</lem><rdg wit="#B">habebat</rdg><rdg wit="#V" cert="low">habens <note type="editorial">vix legitur in V</note></rdg></app> inter genua <app><lem>remaneret</lem><rdg wit="#V">deponeret</rdg></app>. <seg type="versicle" n="6">6</seg> Cumque <app><lem>omnes pene</lem><rdg wit="#Br">pene omnes</rdg></app> medici, qui in urbe <placeName ref="#Roma">Roma</placeName> <app><lem>erant</lem><rdg wit="#M">erant <note type="editorial">supra lineam</note></rdg></app>, nulla <app><lem>ei</lem><rdg wit="#Br" type="omission"/></app> <app><lem>possent</lem><rdg wit="#Re">possint</rdg><rdg wit="#B">possunt</rdg><rdg wit="#V">potuissent</rdg></app> ratione succurrere, extitit quidam <app><lem><persName ref="#Fonteius">Fonteius</persName></lem><rdg wit="#B">fonte cuius</rdg></app> <app><lem>tribunicius</lem><rdg wit="#Br">tribunus</rdg><note type="commentary" resp="#editor">Fonteius tribunicius: risulta attestato un Marcus Fonteius vissuto alla metà del sec. IV (The Prosopography cit., I p. 369). Un T. F(onteius?) Capito è presente in un’epigrafe di Amelia (CIL, XI 4399).</note></app>, qui diceret <app><lem>ei</lem><rdg wit="#Re">eis</rdg></app> <app><lem>istam passionem</lem><rdg wit="#B">ista passione</rdg><rdg wit="#P">talem passionem</rdg></app> acrius suo euenisse germano, et <app><lem>curatus</lem><rdg wit="#M">curatum</rdg></app> <app><lem>esset</lem><rdg wit="#B #M">esse</rdg></app> a quodam sancto <persName ref="#Valentinus">Valentino</persName> episcopo, qui est <app><lem><placeName ref="#Interamna">Interamnae</placeName></lem><rdg wit="#Re">Interamnis</rdg><rdg wit="#Br">ter amnes</rdg></app> urbis ciuis, et <app><lem>hortatur</lem><rdg wit="#N">ortat</rdg></app> transmittere ad eum. <seg type="versicle" n="7">7</seg> Denique ipse puer, <app><lem>ex</lem><rdg wit="#B">et a</rdg></app> <app><lem>quo</lem><rdg wit="#Br">quo ab eo</rdg></app> curatus est, non illum deseruit, dicens <app><lem resp="#editor">enim Iesus et<note type="editorial">dubitanter conieci</note></lem><rdg wit="#Br #M">se nimio</rdg><rdg wit="#Re #B #N">enim ibo et</rdg><rdg wit="#V">enim Iud et</rdg><rdg wit="#P">etenim ibo</rdg></app> huius bonitatis <app><lem>affectu</lem><rdg wit="#Re #B #N">affectum</rdg><rdg wit="#V" type="omission"/><rdg wit="#P">affectu me</rdg></app> esse <app><lem>constrictum</lem><rdg wit="#P">constrictum scitote</rdg></app>. <seg type="versicle" n="8">8</seg> Audiens haec, <persName ref="#Craton">Craton</persName> <app><lem>mittit</lem><rdg wit="#Br">misit</rdg></app> ad illum nobiles uiros, amicos suos, qui illum rogarent, ut ad urbem <placeName ref="#Roma">Romam</placeName> dignaretur <app><lem>uenire</lem><rdg wit="#V">peruenire</rdg></app>. <seg type="versicle" n="9">9</seg> <app><lem>Quem</lem><rdg wit="#Re">que</rdg><rdg wit="#Br">qui</rdg></app> cum <app><lem>uenientem</lem><rdg wit="#Br">uenisset</rdg></app> <app><lem><persName ref="#Craton">Craton</persName></lem><rdg wit="#Br">in</rdg></app> <app><lem>hospitio</lem><rdg wit="#Br">hospitio suo Craton illum</rdg></app> <app><lem>recepisset</lem><rdg wit="#Br">recepit</rdg><rdg wit="#P">suscepisset</rdg></app>, ostendit ei filium <app><lem>suum</lem><rdg wit="#Br" type="omission"/></app> <persName ref="#Cerimon">Cerimonem</persName>, et cepit petere <app><lem>eum</lem><rdg wit="#Br" type="omission"/><rdg wit="#P">ei</rdg></app>, ut, sicut curauit germanum <app><lem><persName ref="#Fonteius">Fonteii</persName></lem><rdg wit="#Br">Fontegii</rdg><rdg wit="#P">Fontei</rdg></app>, <app><lem>ita et</lem><rdg wit="#N">et ita</rdg></app> <app><lem>isti</lem><rdg wit="#Br">illi</rdg></app> succurreret.</p>
+            
+            <p><seg type="versicle" n="10">10</seg> Cui sanctus <persName ref="#Valentinus">Valentinus</persName> episcopus dixit: « Tu si uis, curabitur<note type="source" resp="#editor">Passio s. Constantii BHL 1938.</note> ». <seg type="versicle" n="11">11</seg> Et <persName ref="#Craton">Craton</persName> <app><lem>dixit</lem><rdg wit="#Re #V" type="omission"/></app> ad eum: « Dimidiam partem substantiae <app><lem>meae</lem><rdg wit="#M">meae <note type="editorial">supra lineam</note></rdg></app> tibi dare disposui<note type="source" resp="#editor">cf. Tb 10.10.</note>, si istum ab hac infirmitate liberare potueris ». <seg type="versicle" n="12">12</seg> <app><lem>Cui sanctus</lem><rdg wit="#Br" type="omission"/></app> <persName ref="#Valentinus">Valentinus</persName> respondit: « Miror te <app><lem>magistrum prudentem</lem><rdg wit="#P">prudentem magistrum</rdg></app> non aduertisse, <app><lem>quod</lem><rdg wit="#Br">quae</rdg></app> dixi: “Tu si uis, curabitur”. <seg type="versicle" n="13">13</seg> Nam, si credideris <app><lem>Christo</lem><rdg wit="#P">magistro</rdg></app> meo, fides tua <app><lem>pretiosa</lem><rdg wit="#Br #V">pretiosior</rdg></app> est Deo <app><lem>magis quam tu</lem><rdg wit="#Br">magis quam tua</rdg></app>, <app><lem>qui in rebus uilissimis et uanis</lem><rdg wit="#V">uilissimis et uanis rebus in quibus frustra</rdg></app> uitam tuam expendis, credens effigies malignorum hominum, in ligno aut in quocumque <app><lem>metallo</lem><rdg wit="#Re #B" type="correction">metalla <note type="editorial">corr.</note></rdg></app> expressas, <app><lem>aliquam diuinitatem</lem><rdg wit="#Br">aliquid diuinitatis</rdg></app> habere: <app><lem>quae merito</lem><rdg wit="#N">quem merito</rdg></app> hoc <app><lem>obtinuerunt</lem><rdg wit="#B #N #V">obtinuerit</rdg></app>. <seg type="versicle" n="14">14</seg> Nunc autem, ut non possint credi, qui <app><lem>sordidissimis</lem><rdg wit="#Re">sordissimis</rdg></app> actibus et crudelissimis occupati, nullum tempus <app><lem>immune</lem><rdg wit="#N">immunes</rdg></app> ab sceleribus habuerunt. <seg type="versicle" n="15">15</seg> <app><lem>Sed</lem><rdg wit="#P" type="omission"/></app> <app><lem>si</lem><rdg wit="#B #N #P" type="omission"/></app> <app><lem>istam</lem><rdg wit="#P" type="omission"/><note type="editorial">app. istam inquam om. P</note></app>, quam insinuo, <app><lem>fidem</lem><rdg wit="#P">per quam te</rdg></app> <app><lem>ab hac defendas iniuria</lem><rdg wit="#N">ab hac defendas iniuriam</rdg></app>, <app><lem>et Deo illam inuisibili et omnipotenti</lem><rdg wit="#Br">ad inuisibilem et omnipotentem</rdg></app> committas, dabitur salus filio tuo, quam postulas. <seg type="versicle" n="16">16</seg> <app><lem>Censum uero tuum</lem><rdg wit="#Br">censituram</rdg></app>, cuius michi medietatem <app><lem>polliceri</lem><rdg wit="#Br #P">pollicere</rdg><rdg wit="#B #V">polliceus</rdg></app> uoluisti, <app><lem>offerre</lem><rdg wit="#P">offerri</rdg></app> debes <app><lem>pauperibus</lem><rdg wit="#V">pauperibus erogare</rdg></app>, qui orent pro filio tuo: michi <app><lem>autem</lem><rdg wit="#N" type="omission"/></app> nulla ratione <app><lem>suadere poteris</lem><rdg wit="#Br #B">succedere potueris</rdg></app>, ut pro salute eius aliquid <app><lem>aliud</lem><rdg wit="#Re">aliud <note type="editorial">a. ad corr.</note></rdg><rdg wit="#P">ante aliquid</rdg></app> <app><lem>accipiam</lem><rdg wit="#P" type="omission"/></app>, <app><lem>quam fidem queram</lem><rdg wit="#Br">antequam fidem queram</rdg><rdg wit="#B">ad quam fidem queram</rdg><rdg wit="#V">quam tu credas</rdg><rdg wit="#P">absque fidem queram</rdg></app>. <seg type="versicle" n="17">17</seg> Crede ergo filium Dei uerum Deum esse, <app><lem>Christum Iesum</lem><rdg wit="#M #P">Iesum Christum</rdg></app>, <app><lem>et</lem><rdg wit="#Br">et <note type="editorial">e. et corr.</note></rdg></app> <app><lem>omnibus</lem><rdg wit="#B">omnia</rdg></app> renuntia simulacris, et uidebis <app><lem>saluum</lem><rdg wit="#Re">saluum <note type="editorial">s. saluum corr.</note></rdg></app> filium tuum ».</p>
+            
+            <p><seg type="versicle" n="18">18</seg> Dicit ei <persName ref="#Craton">Craton</persName>: « Licet ignorem, quo ordine religio uestra teneatur, audiui tamen <app><lem>hoc</lem><rdg wit="#V #B" type="omission"/></app>, <app><lem>quod</lem><rdg wit="#Br">quia</rdg></app> unusquisque per <app><lem>fidem suam saluetur</lem><rdg wit="#Re">fide sua saluetur</rdg><rdg wit="#Br">fidem suam saluabitur</rdg><rdg wit="#V">fidem saluetur suam</rdg></app>, nec prosit <app><lem>alteri</lem><rdg wit="#Br" type="omission"/></app> alterius <app><lem>fides</lem><rdg wit="#B">fidem</rdg></app>, nec obesse poterit alteri infidelitas alterius<note type="source" resp="#editor">IOH. CASS., conl. 15.2: quapropter numquam debemus eos qui haec adfectant in his uirtutibus admirari, sed potius intueri utrum uitiorum omnium expulsione et morum emendatione perfecti sint, quod utique non pro alterius fide aut diuersitate causarum, sed pro uniuscuiusque studio Dei gratia dispensante conceditur.</note> ». <seg type="versicle" n="19">19</seg> Sanctus <persName ref="#Valentinus">Valentinus</persName> <app><lem>episcopus</lem><rdg wit="#Br" type="omission"/></app> dixit: « Certae causae sunt conuersationis humanae, quae <app><lem>alteros pro aliis</lem><rdg wit="#Re #N">alterius pro alio</rdg><rdg wit="#Br #M #P">alterum pro alio</rdg><rdg wit="#B">alterius pro aliis</rdg><rdg wit="#V">alios pro aliis</rdg></app> nec liberari <app><lem>faciant</lem><rdg wit="#Re #B #N #M">faciat</rdg><rdg wit="#Br">faciunt</rdg></app>, nec perire<note type="source" resp="#editor">cf. AUG., contr. Iul. 1 (col. 659): nam alium pro alio damnari, non ualde uidetur habere rationem: alium autem pro alio saluari, et decentius magis et rationabilius apparet.</note>. <seg type="versicle" n="20">20</seg> Neque <app><lem>enim</lem><rdg wit="#P" type="omission"/></app> in fide dubius pater filio potest obesse fideli. <seg type="versicle" n="21">21</seg> In his ergo causis <app><lem>quasi</lem><rdg wit="#M #P">quas</rdg></app> necessitas flagitat: sanitatem <app><lem>querunt</lem><rdg wit="#B #V">querit</rdg></app>, dum patitur, pater pro filio, soror pro fratre, <app><lem>pro seruo dominus</lem><rdg wit="#M">dominus pro seruo</rdg></app><note type="source" resp="#editor">cf. AUG., Opus imperfectum contra secundam responsionem Iuliani III 12-13 (col. 1252); Corp. iur. Civ. 4.13.</note>: <app><lem>et</lem><rdg wit="#Br" type="omission"/></app> <app><lem>filium</lem><rdg wit="#Br" type="omission"/><rdg wit="#V #M #P">filiam</rdg><rdg wit="#Re #B #N">filia</rdg></app> <app><lem>patri</lem><rdg wit="#Br" type="omission"/><rdg wit="#P">patris</rdg></app> <app><lem>esse</lem><rdg wit="#Br" type="omission"/></app> <app><lem>redditum</lem><rdg wit="#Br" type="omission"/><rdg wit="#V #M #P">redditam</rdg><rdg wit="#Re #B #N">reddita</rdg></app><app><lem>, et fratrem sorori, et</lem><rdg wit="#Br" type="omission"/></app> <app><lem>seruum legimus</lem><rdg wit="#Br" type="omission"/><rdg wit="#N">seruus legitimo</rdg></app> <app><lem>domino</lem><rdg wit="#Br" type="omission"/></app> <app><lem>restitutum</lem><rdg wit="#N">restitutus</rdg></app>. <seg type="versicle" n="22">22</seg> Igitur pro eorum <app><lem>interitu</lem><rdg wit="#Br">interitum</rdg></app> <app><lem>hi</lem><rdg wit="#B">hii</rdg></app>, qui cruciabantur, fidem integram acceperunt<note type="source" resp="#editor">GREG. M., Expositio super cantica canticorum 5.22 (PL 79, 534): ut fortes existerent, fidem integram acceperunt.</note> ad hoc, ut efficerentur <app><lem>utrique</lem><rdg wit="#P">utrique ut</rdg></app> fideles, et salus temporalis <app><lem>data</lem><rdg wit="#B">det a</rdg></app> <app><lem>corporibus</lem><rdg wit="#Re #V">corporibus ut</rdg></app> <app><lem>acquireret</lem><rdg wit="#Br #B #N">acquirere</rdg><rdg wit="#V">acquirerent</rdg></app> <app><lem>animabus eternam</lem><rdg wit="#V">omnibus</rdg></app>. <seg type="versicle" n="23">23</seg> Sicut <app><lem>et</lem><rdg wit="#Br" type="omission"/></app> factum est, ut centurio <app><lem>morientem</lem><rdg wit="#P">moriente</rdg></app> seruum suum reciperet<note type="source" resp="#editor">Lc 7.2-10.</note>, et <app><lem>filiam mortuam</lem><rdg wit="#N">filia mortua</rdg></app> archisynagogus ad uitam reuersam<note type="source" resp="#editor">Lc 8.41.</note> aspiceret, et sorores Lazarum, iam <app><lem>sepulturam</lem><rdg wit="#M">sepultura</rdg></app> <app><lem>quatriduanam</lem><rdg wit="#Br">quatriduanam <note type="editorial">-du- supra lineam</note></rdg><rdg wit="#M">quatriduanum</rdg></app> <app><lem>habentem</lem><rdg wit="#M">habentes</rdg></app><note type="source" resp="#editor">cf. Ioh 11.43.</note>, <app><lem>quem</lem><rdg wit="#P" type="omission"/></app> lugebant <app><lem>et flebant</lem><rdg wit="#Br">acciperent</rdg><rdg wit="#P">fremebant</rdg></app>, <app><lem>uoce</lem><rdg wit="#Re #B">uocem</rdg></app> Domini <app><lem>suscitatum</lem><rdg wit="#B">suscitauit</rdg></app> esse gaudebant. <seg type="versicle" n="24">24</seg> <app><lem>Sunt et</lem><rdg wit="#P">sed cum</rdg></app> <app><lem>multa alia</lem><rdg wit="#B">alia multa</rdg><rdg wit="#P">alia</rdg></app>, quae in <app><lem><hi rend="italic">Nouis</hi></lem><rdg wit="#Re">nobis</rdg></app> et in <hi rend="italic">Veteribus <app><lem>sacris</lem><rdg wit="#Re">sacri</rdg></app> uoluminibus</hi> ista affirment, <app><lem>et</lem><rdg wit="#Br">ut</rdg></app> fides alterius <app><lem>subuenisset</lem><rdg wit="#M #P">subuenisse</rdg></app> aliis doceatur, et infidelitas alterius aliis <app><lem>nocuisset</lem><rdg wit="#B">nocuissent</rdg><rdg wit="#M #P">nocuisse</rdg></app>, <app><lem>quae</lem><rdg wit="#Br">quod</rdg></app> nunc <app><lem>memorare</lem><rdg wit="#Br">memorare satis</rdg></app> longum est. <seg type="versicle" n="25">25</seg> Nam <app><lem>et</lem><rdg wit="#B #N #M #P" type="omission"/></app> Pharaonis unius hominis infidelitas <app><lem>totam</lem><rdg wit="#N">totum</rdg></app> <placeName ref="#Egyptus">Egyptum</placeName> <app><lem>cedi</lem><rdg wit="#N">cecam</rdg></app> fecit uariis plagis, quoadusque cum suo interiret <app><lem>exercitu</lem><rdg wit="#Re" type="correction">exercitum <note type="editorial">corr.</note></rdg></app>, et fides <app><lem>Moysis</lem><rdg wit="#B #N #M">Moysi</rdg><rdg wit="#Re">Moysen (?) <note type="editorial">correcto ex Moysi</note></rdg><rdg wit="#P">per Moysen</rdg></app> preliantibus uictoriam ex hostibus tribuit<note type="source" resp="#editor">ex libro Exodi.</note>. <seg type="versicle" n="26">26</seg> Et <app><lem>Iesu</lem><rdg wit="#Re">Iesum</rdg><rdg wit="#P">Iesus</rdg></app> Naue sanctitas populis <app><lem>in dispersione positis</lem><rdg wit="#N" type="omission"/></app> plurimum triumphum attribuit<note type="source" resp="#editor">ex libro Iosue.</note>. <seg type="versicle" n="27">27</seg> <app><lem>Quid</lem><rdg wit="#Re">quid ad</rdg><rdg wit="#B">quid a</rdg></app> <app><lem>memorem</lem><rdg wit="#B #N">memorare</rdg></app> uiduae <app><lem>credenti</lem><rdg wit="#M">credentis</rdg></app> <app><lem>ab</lem><rdg wit="#Br">et</rdg><rdg wit="#B">ad</rdg></app> <app><lem>Helia</lem><rdg wit="#B">Heliam</rdg></app> mortuum unicum suscitatum<note type="source" resp="#editor">III Rg 8.10-24 (cf. III Rg 17.17-24).</note>, <app><lem>dolenti</lem><rdg wit="#Br">dolente</rdg><rdg wit="#M">et dolenti</rdg></app> <app><lem>e feretro</lem><rdg wit="#Br">efferetro</rdg></app> <app><lem>redditum</lem><rdg wit="#Br">redditum et</rdg></app> a Christo unicum uiduae<note type="source" resp="#editor">Lc 8.41 (cf. Lc 7.11-15).</note>? <seg type="versicle" n="28">28</seg> <app><lem>Quid</lem><rdg wit="#Br">qui</rdg><rdg wit="#N">et quemdam</rdg><rdg wit="#M">quid aut</rdg><rdg wit="#P">quidam</rdg></app> <app><lem>paralyticum</lem><rdg wit="#P">paralyticus</rdg></app> a credentibus cum lectulo suo <app><lem>funibus</lem><rdg wit="#P">funis</rdg></app> depositum <app><lem>ac curatum</lem><rdg wit="#P">hac curatus</rdg></app><note type="source" resp="#editor">Lc 5.18, Mc 2.3-6.</note>? <seg type="versicle" n="29">29</seg> Nonne <app><lem>fides</lem><rdg wit="#P">finis</rdg></app> alterius ita aliis profuit, ut fides credentium <app><lem>diuini oris</lem><rdg wit="#Br">diuiniores</rdg></app> <app><lem>laudem adquireret</lem><rdg wit="#Br">adquiesceret</rdg></app>, et <app><lem>a non credentibus incredulitatem eiceret</lem><rdg wit="#N" type="omission"/></app>, et sanitatem languentibus restitueret, et uitam in mortuis repararet? ».</p>
+            
+            <p><seg type="versicle" n="30">30</seg> Haec et his similia <app><lem>multa</lem><rdg wit="#Re #B">multa a</rdg><rdg wit="#P" type="omission"/></app> <app><lem>sancto <persName ref="#Valentinus">Valentino</persName> episcopo prosequente</lem><rdg wit="#Br">sanctus Valentinus episcopus prosecutus</rdg></app>, <persName ref="#Craton">Craton</persName> orator cecidit <app><lem>ad</lem><rdg wit="#Re">a</rdg></app> pedes eius, dicens: « Credo, <app><lem>quod</lem><rdg wit="#Br">quia</rdg></app> iste, quem predicas, uerus <app><lem>sit</lem><rdg wit="#Br">est</rdg></app> Deus, et preter ipsum non est alius, qui imperat languori, ut abscedat, imperat morti, ut <app><lem>fugiat</lem><rdg wit="#B">effugiat</rdg></app>, imperat uitae, ut <app><lem>redeat</lem><rdg wit="#B #N">reddeat</rdg></app> ». <seg type="versicle" n="31">31</seg> Sanctus <persName ref="#Valentinus">Valentinus</persName> episcopus dixit: « Fides Christiana non tantum uerbis, sed <app><lem>et</lem><rdg wit="#N #M #P" type="omission"/></app> operibus demonstratur<note type="source" resp="#editor">actSilv A Sylvester dixit: « Iusticia Dei ipsa in solis operibus bonis comprobata est, an etiam per fidem qua crederent Deum hunc esse qui caelum terramque ac mare cum omnibus quae in eis sunt creavit? ».</note> ». <seg type="versicle" n="32">32</seg> Dicit ei <persName ref="#Craton">Craton</persName>: « <app><lem>Quae</lem><rdg wit="#Br">quod</rdg></app> <app><lem>sunt</lem><rdg wit="#Br #B #N">est</rdg></app> <app><lem>opera</lem><rdg wit="#Br">opus</rdg></app>, per <app><lem>quae</lem><rdg wit="#Br">quod</rdg><rdg wit="#B #N">quam</rdg></app> fides possit ostendi? ». <seg type="versicle" n="33">33</seg> Sanctus <persName ref="#Valentinus">Valentinus</persName> episcopus dixit: « Vt <app><lem>abrenuntietur</lem><rdg wit="#Br">abrenunties</rdg></app> ydolis manufactis, quorum <app><lem>effigies</lem><rdg wit="#B">effugies</rdg></app> <app><lem>adorantur</lem><rdg wit="#Re #V">adoratur</rdg></app> in templis, et <app><lem>ab</lem><rdg wit="#Br" type="omission"/></app> omni peccato <app><lem>lotus</lem><rdg wit="#Br">lotus de</rdg></app> fonte purissimo, Dei filius <app><lem>adopteris</lem><rdg wit="#M">opteris</rdg></app> ». <seg type="versicle" n="34">34</seg> <persName ref="#Craton">Craton</persName> dixit: « Aqua, quae sordes corporis lauat, quomodo poterit peccata <app><lem>mundare</lem><rdg wit="#Br">lauare</rdg></app><note type="source" resp="#editor">actSilv: Sylvester dixit: « Sicut circumcisio in circumcisione finem accepit, ita initium baptismatis consecratio per baptismum Christi suscepit... ut per ipsum sic lavaret animas a peccatis, sicut per se lavat corpora a sordibus inquinata... ».</note>? ». <seg type="versicle" n="35">35</seg> Sanctus <persName ref="#Valentinus">Valentinus</persName> episcopus dixit: « Aqua ipsa per mysterium <app><lem>inuocatae Trinitatis</lem><rdg wit="#Br">inuocata Trinitate</rdg></app> Spiritum Sanctum <app><lem>in</lem><rdg wit="#B" type="omission"/></app> <app><lem>semetipsam</lem><rdg wit="#V #P">semetipsa</rdg></app> <app><lem>recipiet</lem><rdg wit="#Re #Br">recipit</rdg></app>, <app><lem>et</lem><rdg wit="#Br">ut</rdg></app> per <app><lem>ipsum</lem><rdg wit="#Br #B">ipsam</rdg></app> uniuersa peccata et crimina <app><lem>dimittentur</lem><rdg wit="#Re">demittentur</rdg><rdg wit="#Br">dimittantur</rdg></app> ». <seg type="versicle" n="36">36</seg> <app><lem>Dicit</lem><rdg wit="#N" type="omission"/><rdg wit="#M">dixit</rdg></app> <app><lem>ei <persName ref="#Craton">Craton</persName>: « Dum disputatio</lem><rdg wit="#N" type="omission"/></app> <app><lem>nostra</lem><rdg wit="#N #M" type="omission"/><rdg wit="#B">uestra</rdg></app> <app><lem>longius tenditur, uita mei</lem><rdg wit="#N" type="omission"/></app> <app><lem>filii</lem><rdg wit="#N" type="omission"/><rdg wit="#Br">Cerimonis</rdg></app> <app><lem>breuiatur! ».</lem><rdg wit="#N" type="omission"/></app> <seg type="versicle" n="37">37</seg> <app><lem>Dicit ei sanctus <persName ref="#Valentinus">Valentinus</persName> episcopus: « Nisi</lem><rdg wit="#N" type="omission"/></app> <app><lem>credideris</lem><rdg wit="#N" type="omission"/><rdg wit="#P">credideritis</rdg></app> <app><lem>ea, quae nec audire potuisti aliquando nec uidere, saluus esse non</lem><rdg wit="#N" type="omission"/></app> <app><lem>poterit filius tuus</lem><rdg wit="#N" type="omission"/><rdg wit="#Br">poteris</rdg></app> <app><lem>».</lem><rdg wit="#N" type="omission"/></app> <seg type="versicle" n="38">38</seg> Dicit ei <persName ref="#Craton">Craton</persName>: « Quid <app><lem>est</lem><rdg wit="#N">est ergo</rdg></app>, <app><lem>quod</lem><rdg wit="#Br">quae</rdg></app> ego nec audire potui nec corde conspicere? ». <seg type="versicle" n="39">39</seg> Sanctus <persName ref="#Valentinus">Valentinus</persName> episcopus dixit: « <app><lem>Numquid</lem><rdg wit="#Re">num</rdg></app> <app><lem>audisti</lem><rdg wit="#N">audistis</rdg></app> aliquando uirginem concepisse, <app><lem>uirginem</lem><rdg wit="#B">uirgo</rdg></app> peperisse, uirginem post <app><lem>partum permansisse</lem><rdg wit="#M #P">permansisse partum</rdg></app>? <seg type="versicle" n="40">40</seg> <app><lem>Audisti</lem><rdg wit="#N" type="omission"/></app> aliquando <app><lem>aut uidisti</lem><rdg wit="#Br" type="omission"/></app> siccis <app><lem>pedibus</lem><rdg wit="#P" type="omission"/></app> undarum <app><lem>pelagus</lem><rdg wit="#B">pelagos</rdg></app> <app><lem>pertransitum</lem><rdg wit="#N">transitum</rdg><rdg wit="#P">pertransitus</rdg></app>, <app><lem>imperasse uentis</lem><rdg wit="#B">impetrasse uenti</rdg><rdg wit="#Br">imperasse uentibus</rdg></app>, <app><lem>tempestatem</lem><rdg wit="#N">et tempestates</rdg></app> iussu compescuisse, postremo <app><lem>crucifixum</lem><rdg wit="#P" type="omission"/></app>, <app><lem>mortuum</lem><rdg wit="#Br" type="omission"/></app> <app><lem>ac</lem><rdg wit="#P" type="orthographic">hac</rdg></app> sepultum, die tertia <app><lem>resurrexisse</lem><rdg wit="#B #N #P">resurrecturum</rdg></app>, atque multis uidentibus ascendisse in <app><lem>celis</lem><rdg wit="#M #P">celos</rdg></app>, <app><lem>angelis</lem><rdg wit="#N">angeli</rdg></app> testantibus, ita ut ascendit, <app><lem>uenturum adsertus est</lem><rdg wit="#V">uenturum et iudicaturum</rdg></app><note type="source" resp="#editor">cf. actSilv A: Sylvester dixit: « ... maria siccis pedibus ambulavit ventis imperavit tempestates sedavit... et vitam iam mortuis et sepultis oris sui imperio redonavit ».</note>? <seg type="versicle" n="41">41</seg> Si <app><lem>ita credis</lem><rdg wit="#Br">ista credideris</rdg><rdg wit="#N">ista credit</rdg></app> <app><lem>facta</lem><rdg wit="#V" type="omission"/></app>, accede et <app><lem>baptizare</lem><rdg wit="#Br">baptizari</rdg></app>, ut possis ad salutem filii tui pertingere, et <app><lem>per ipsum</lem><rdg wit="#V">post haec</rdg></app> ad uitam <app><lem>perpetuam</lem><rdg wit="#P">eternam</rdg></app> peruenire ». <seg type="versicle" n="42">42</seg> Dicit ei <persName ref="#Craton">Craton</persName>: « Quantacumque dixeris, et uerborum <app><lem>ampliata</lem><rdg wit="#N">amplicata</rdg></app> fuerit multitudo, <app><lem>uno</lem><rdg wit="#N" type="omission"/></app> hoc colligi poterit: si saluetur hic, pro quo ista dicuntur ».</p>
+            
+            <p><seg type="versicle" n="43">43</seg> Sanctus <persName ref="#Valentinus">Valentinus</persName> episcopus dixit: « Quoniam <app><lem>sapientia</lem><rdg wit="#Br">sapientia huius</rdg></app> mundi, in <app><lem>qua tu</lem><rdg wit="#B">quantum</rdg></app> magister esse uideris, <app><lem>stulta</lem><rdg wit="#Br #B">stultitia</rdg></app> est apud Deum<note type="source" resp="#editor">I Cor 3.19.</note>, et non <app><lem>potest</lem><rdg wit="#Re" cert="low">potam (?)</rdg><rdg wit="#Br #M">potes</rdg></app> tam perfecte <app><lem>credere</lem><rdg wit="#P">credi</rdg></app>, <app><lem>quam</lem><rdg wit="#Br">quod</rdg></app> fides ipsa <app><lem>deposcit</lem><rdg wit="#M">deposcit <note type="editorial">de- supra lineam</note></rdg></app>, cui credendum est, da michi fidem tuam sub hac pollicitatione, <app><lem>ut</lem><rdg wit="#Br #V">ut si</rdg></app> filius tuus per <app><lem>meam fidem</lem><rdg wit="#B">mea fide</rdg></app> saluetur: <app><lem>tu uero per</lem><rdg wit="#V">post</rdg></app> salutem filii tui cum omni domo tua conuertaris ad Christum ». <seg type="versicle" n="44">44</seg> Tunc <app><lem><persName ref="#Craton">Craton</persName></lem><rdg wit="#Br" type="omission"/></app></p>
+         </div>
+      </body>
+  </text>
+</TEI>
+
+<TEI xml:id="traduzione_it">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Traduzione italiana</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>Edizione critica digitale</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Traduzione italiana della Passio sancti Valentini</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text xml:lang="it">
+    <body>
+     <div type="edition" xml:id="traduzione" xml:lang="it">
+        <head>Traduzione italiana</head>
+        <p><seg type="versicle" n="1">1</seg> Il Profeta dice al Signore: « “Hai moltiplicato i figli degli uomini in base alla tua altezza” ».</p>
+        <p><seg type="versicle" n="2">2</seg> Ed in questa moltiplicazione sono particolarmente vicini a Dio coloro che hanno dedicato la propria vita al Creatore, al punto che rendono il proprio corpo e l’anima assolutamente concentrati su Cristo.</p>
+        <p><seg type="versicle" n="3">3</seg> E perciò il beato vescovo di Terni, san Valentino, vivendo nel bene, meritò di stargli vicino con i miracoli, miracoli che hanno fatto conoscere ai credenti di tutto il mondo l’uomo nascosto dentro.</p>
+        <p><seg type="versicle" n="4">4</seg> Tre nobili ateniesi, Proculo, Efebo e Apollonio, studenti e studiosi, siccome abitavano in Grecia e desideravano studiare la cultura latina, si trovavano ospitati presso Cratone, loro concittadino, professore esperto in tutte e due le lingue, e si giovavano sia della sua ospitalità che del suo insegnamento.</p>
+        <p><seg type="versicle" n="5">5</seg> Successe a un certo punto che l’unico figlio di Cratone, a nome Cerimone, un giovane studente, si ammalasse a tal punto che rimase completamente curvato nella schiena, praticamente con la testa in mezzo alle ginocchia.</p>
+        <p><seg type="versicle" n="6">6</seg> E siccome quasi tutti i medici che si trovavano a Roma non potevano in alcun modo giovargli, venne fuori un tribuno a nome Fonteio, che raccontò come quel tipo di malattia fosse venuto anche a un suo fratello, e che questo era stato curato da un certo vescovo san Valentino, cittadino della città di Terni, e li esorta a mandarlo da costui.</p>
+        <p><seg type="versicle" n="7">7</seg> Difatti quel ragazzo, dal momento in cui fu guarito, non lo aveva abbandonato più, affermando di esservi costretto dall’amore per la bontà di Gesù e di Valentino.</p>
+        <p><seg type="versicle" n="8">8</seg> Sentendo queste cose, Cratone gli invia allora alcuno nobili uomini suoi amici, per pregarlo di degnarsi di venire nella città di Roma.</p>
+        <p><seg type="versicle" n="9">9</seg> E quando Cratone lo ebbe ospitato una volta arrivato, gli mostrò suo figlio Cerimone, e cominciò a chiedergli di venire in aiuto anche a lui, così come aveva curato il fratello di Fonteio.</p>
+        <p><seg type="versicle" n="10">10</seg> E san Valentino vescovo gli disse: « Verrà curato se tu lo vuoi ».</p>
+        <p><seg type="versicle" n="11">11</seg> E Cratone disse a lui: « Ho deciso di darti la metà di tutte le mie ricchezze, se riuscirai a liberarlo da questa malattia ».</p>
+        <p><seg type="versicle" n="12">12</seg> E san Valentino gli rispose: « Mi meraviglio che un maestro saggio come te non abbia capito, quando ho detto: “Verrà curato se tu lo vuoi”.</p>
+        <p><seg type="versicle" n="13">13</seg> Infatti, se crederai al mio Cristo, la tua fede sarà preziosa per Dio più che tu stesso, che passi la tua vita in mezzo a cose assolutamente futili e vane, dato che credi che le immagini di uomini malvagi, fatte di legno o di qualche tipo di metallo, posseggano una qualche divinità: e giustamente sono riusciti ad ottenere tutto ciò.</p>
+        <p><seg type="versicle" n="14">14</seg> Adesso, invece, non è possibile credere a gente che, dedita sempre ad azioni sozze e crudelissime, non hanno passato mai un momento lontano da crimini.</p>
+        <p><seg type="versicle" n="15">15</seg> Ma se difenderai da tale offesa questa fede che ti sto presentando, e la affidi al Dio invisibile ed onnipotente, verrà restituita a tuo figlio la salute che stai chiedendo.</p>
+        <p><seg type="versicle" n="16">16</seg> Devi invece offrire ai poveri la tua ricchezza, di cui mi vuoi promettere la metà, perché preghino per tuo figlio: non potrai in nessun modo invece mai convincere me a prendere qualcosa per la sua salute, piuttosto che chiedere soltanto la tua fede.</p>
+        <p><seg type="versicle" n="17">17</seg> Credi dunque che il figlio di Dio è il vero Dio, Gesù Cristo, e rinuncia a tutti gli idoli, e vedrai salvo tuo figlio ».</p>
+        <p><seg type="versicle" n="18">18</seg> Cratone gli dice: « Anche se non so di che tipo sia la vostra religione, ho comunque sentito che ognuno si salva solo per la sua propria fede, e che non può giovare la fede di uno a un altro, come non può nuocere a uno il fatto che un altro non creda ».</p>
+        <p><seg type="versicle" n="19">19</seg> Il vescovo san Valentino gli disse: « Sono ben definiti i motivi della condizione umana, per cui uno non può né essere salvato né andar perduto al posto di un altro.</p>
+        <p><seg type="versicle" n="20">20</seg> Un padre tiepido nella fede non può infatti nuocere al figlio che vi è invece saldo.</p>
+        <p><seg type="versicle" n="21">21</seg> In quelle situazioni in cui lo richiede quasi la necessità, chiedono la guarigione, quando soffrono, il padre per il figlio, la sorella per il fratello, il padrone per il servo; e leggiamo che il figlio viene restituito al padre, il fratello alla sorella e il servo al padrone.</p>
+        <p><seg type="versicle" n="22">22</seg> E dunque, quelli che stavano nel dolore per la loro morte hanno assunto la fede perfetta in modo da diventare gli uni e gli altri credenti, e che la salute fisica data ai corpi acquistasse quella eterna per le anime.</p>
+        <p><seg type="versicle" n="23">23</seg> E così è successo che il centurione ha riavuto il suo servo morente, e che il capo della sinagoga ha visto la sua figlia morta ritornare in vita, e le sorelle gioivano del fatto che fosse stato risuscitato dalla voce del Signore Lazzaro, sepolto già da quattro giorni, e che esse piangevano e rimpiangevano.</p>
+        <p><seg type="versicle" n="24">24</seg> Ma ci sono anche molte altre cose affermate nei libri sacri Nuovi e Vecchi, che adesso è troppo lungo ricordare, dove si insegna come la fede di uno sia venuta in aiuto di altri, e come il non credere di uno abbia provocato il male di altri.</p>
+        <p><seg type="versicle" n="25">25</seg> Difatti il non credere del Faraone, un uomo solo, fece distruggere l’Egitto da svariate piaghe, fino a che non morì insieme a tutto il suo esercito, e la fede di Mosè diede la vittoria sui nemici a quelli che combattevano.</p>
+        <p><seg type="versicle" n="26">26</seg> E la santità di Giosuè attribuì ai popoli dispersi innumerevoli trionfi.</p>
+        <p><seg type="versicle" n="27">27</seg> Serve forse ricordare l’unico figlio, morto, risuscitato da Elia per la vedova che aveva fede, e l’unico figlio, restituito dal doloroso feretro, da Gesù Cristo alla vedova?</p>
+        <p><seg type="versicle" n="28">28</seg> Serve ricordare il paralitico portato dai fedeli con tutta la sua lettiga, e curato?</p>
+        <p><seg type="versicle" n="29">29</seg> Forse che la fede altrui non ha giovato agli altri a tal punto, che la fede di chi crede acquistasse la lode della bocca di Dio, e scacciasse da coloro che non credono l’incredulità, e restituisse la vita ai morti? ».</p>
+        <p><seg type="versicle" n="30">30</seg> Mentre san Valentino vescovo continuava a dire queste e molte altre cose simili, il maestro Cratone cadde ai suoi piedi dicendo: « Credo che costui che tu predichi sia il vero Dio, e che non c’è nessuno oltre a lui che ha potere di allontanare il dolore, di mettere in fuga la morte, e di far tornare la vita ».</p>
+        <p><seg type="versicle" n="31">31</seg> Il vescovo san Valentino disse: « La fede cristiana si dimostra non soltanto con le parole, ma anche coi fatti ».</p>
+        <p><seg type="versicle" n="32">32</seg> E Cratone gli dice: « Quali sono i fatti mediante i quali si dimostra la fede? ».</p>
+        <p><seg type="versicle" n="33">33</seg> Il vescovo san Valentino disse: « Si deve rinunciare agli idoli costruiti dagli uomini, le cui immagini si adorano nei templi, e così, mondato da ogni peccato con acqua purissima, tu possa essere assunto come figlio di Dio ».</p>
+        <p><seg type="versicle" n="34">34</seg> Cratone disse: « Come può l’acqua, che lava lo sporco del corpo, mondare i peccati? ».</p>
+        <p><seg type="versicle" n="35">35</seg> Il vescovo san Valentino disse: « L’acqua, grazie al mistero dell’invocazione della Trinità, riceve in sé lo Spirito Santo, e grazie ad esso tutti i peccati e i delitti vengono perdonati ».</p>
+        <p><seg type="versicle" n="36">36</seg> Gli dice Cratone: « Mentre questa nostra discussione va avanti, la vita di mio figlio si accorcia! ».</p>
+        <p><seg type="versicle" n="37">37</seg> Il vescovo san Valentino gli dice: « Se non crederai alle cose che non hai potuto né ascoltare né vedere mai, tuo figlio non potrà essere salvo ».</p>
+        <p><seg type="versicle" n="38">38</seg> Gli dice Cratone: « Che cos’è che non ho potuto né vedere col cuore né sentire? ».</p>
+        <p><seg type="versicle" n="39">39</seg> Il vescovo san Valentino disse: « Hai forse mai sentito dire che da vergine ha concepito, che da vergine ha partorito, e che dopo il parto è rimasta vergine?</p>
+        <p><seg type="versicle" n="40">40</seg> O forse qualche volta hai sentito o visto che è passato sulle onde del mare senza bagnarsi i piedi, che comandava ai vènti, che frenava le tempeste col suo volere, e che alla fine fu crocifisso, morì e fu sepolto, e che risorse il terzo giorno, e che ascese in cielo sotto gli occhi di molte persone, con testimoni gli angeli, e che come è asceso si dice che ritornerà?</p>
+        <p><seg type="versicle" n="41">41</seg> Se pensi che tutto ciò sia successo, vieni avanti e fatti battezzare, per poter così pervenire alla salvezza di tuo figlio, e attraverso di lui giungere alla vita eterna ».</p>
+        <p><seg type="versicle" n="42">42</seg> Gli dice allora Cratone: « Tutto quanto hai detto, e che hai spiegato con moltissime parole, si può racchiudere in un unico concetto: che si possa salvare colui per il quale tutte queste cose vengono dette ».</p>
+        <p><seg type="versicle" n="43">43</seg> Il vescovo san Valentino disse: « Poiché la sapienza umana, nella quale tu sembri essere maestro, è stolta presso di Dio, e non riesce a credere a colui in cui si deve credere in maniera così perfetta quanto la fede stessa richiede, dammi la tua fede dietro questa promessa, che tuo figlio sarà salvato grazie alla mia fede: tu, invece, per la salvezza di tuo figlio ti convertirai a Cristo insieme a tutta la tua casa ».</p>
+        <p><seg type="versicle" n="44">44</seg> Allora Cratone chiamò sua moglie e tutti i suoi servi, e prostrato ai piedi di Valentino cominciò a promettere che, se il figlio si fosse salvato, avrebbero tutti creduto a Cristo.</p>
+        <p><seg type="versicle" n="45">45</seg> Si trovavano presenti a questa scena Procolo, Efebo ed Apollonio, che abbiamo visto aver adito gli studi latini dopo essersi perfezionati in quelli greci.</p>
+        <p><seg type="versicle" n="46">46</seg> Ed anche loro, allo stesso modo volendo che si salvasse Cerimone, il figlio del loro maestro, giurano che avrebbero creduto.</p>
+        <p><seg type="versicle" n="47">47</seg> Allora il vescovo san Valentino ordinò che gli fosse preparata una stanzetta, e che per un giorno e una notte si facesse silenzio.</p>
+        <p><seg type="versicle" n="48">48</seg> E chiudendo la porta dietro di sé e dietro il giovane Cerimone, che ormai da tre anni giaceva col corpo tutto contorto e raggomitolato, al punto che aveva ormai la testa in mezzo alle ginocchia, e non poteva muovere nessuna parte del corpo.</p>
+        <p><seg type="versicle" n="49">49</seg> Infatti le sue braccia e le sue gambe erano come contorte le une sulle altre, e nessun medico conosceva nemmeno il nome che aveva quella malattia.</p>
+        <p><seg type="versicle" n="50">50</seg> Allora il vescovo san Valentino, uomo di Dio pieno di fede, chiusa la porta, e steso a terra un cilicio, sollevò il giovane Cerimone dal letto e lo stese mezzo morto sul cilicio, sul quale egli era solito pregare; e a lui, che restò per tutta la notte in preghiere e lodi al Signore, verso mezzanotte apparve una luce, sì ché quelli che assistevano alla scena intorno alla stanzetta pensarono che all’interno fosse stata accesa una fiamma.</p>
+        <p><seg type="versicle" n="51">51</seg> Ma, passata un’ora, il ragazzo si alza completamente guarito, e comincia a cantare sano e salvo a voce alta lodi al Signore.</p>
+        <p><seg type="versicle" n="52">52</seg> I parenti allora, sentendolo cantare le lodi del Signore, dopo che per tre anni lo avevano sentito emettere solo gemiti e come dei muggiti, tutti felici insieme chiedevano a san Valentino di aprire la porta.</p>
+        <p><seg type="versicle" n="53">53</seg> Ma quello disse: « Non vi aprirò finché non avrò completato il rito della preghiera ed il canto degli inni ».</p>
+        <p><seg type="versicle" n="54">54</seg> E quando ormai l’aurora stava mettendo fine alla notte, san Valentino apre la porta della stanzetta e fa andare, liberato da ogni malattia, il piccolo Cerimone dai genitori, come se non avesse mai sofferto di niente.</p>
+        <p><seg type="versicle" n="55">55</seg> Allora Cratone con la moglie e tutta la sua casa credette, e fu battezzato.</p>
+        <p><seg type="versicle" n="56">56</seg> E non fu possibile in nessun modo convincere Cerimone a non mettersi al sèguito di san Valentino.</p>
+        <p><seg type="versicle" n="57">57</seg> Procolo, Efebo ed Apollonio invece, abbandonando gli studi della sapienza umana, si dedicarono completamente al Signore, al punto che in sèguito non vollero più leggere nessuno scritto profano.</p>
+        <p><seg type="versicle" n="58">58</seg> E invece, convertitisi al Signore, si dedicarono mediante gli studi teologici a quel maestro del quale non sono provate soltanto parole, ma anche fatti miracolosi.</p>
+        <p><seg type="versicle" n="59">59</seg> Intanto, attraverso costoro una gran massa di studiosi si rivolgeva a Cristo, al punto che ne fu coinvolto Abbondio, figlio del prefetto dell’Urbe, che pieno di fede si professava pubblicamente servo di Cristo.</p>
+        <p><seg type="versicle" n="60">60</seg> A quel punto, si accese l’indignazione presso tutti i senatori.</p>
+        <p><seg type="versicle" n="61">61</seg> San Valentino vescovo, catturato e bastonato, venne allora costretto a sacrificare ai demoni, e dopo essere stato torturato tutto il giorno venne chiuso in carcere.</p>
+        <p><seg type="versicle" n="62">62</seg> Ma vedendo che continuava a cantare la gloria, e che confortava gli animi di coloro che si erano convertiti a Cristo grazie a lui, portatolo fuori dal carcere nel silenzio della notte lo decapitarono su ordine di Furioso Placido, prefetto dell’Urbe.</p>
+        <p><seg type="versicle" n="63">63</seg> Allora il corpo venerando del martire di Cristo Valentino fu portato via da Procolo, Efebo ed Apollonio; e lo portarono alla sua chiesa di Terni viaggiando di notte; e lì, comprato del terreno nella zona suburbana, non lontano dalla città, lo affidarono a una sepoltura molto onorevole.</p>
+        <p><seg type="versicle" n="64">64</seg> E mentre rimanevano lì in veglie quotidiane e in lodi al Signore, catturati dai Pagani, furono consegnati per essere trattenuti al consolare Lucenzio.</p>
+        <p><seg type="versicle" n="65">65</seg> E questo Lucenzio, rendendosi conto che Procolo, Efebo e Apollonio erano molto amati dalle persone che conoscevano, temendo che essi potessero essergli sottratti con la violenza dal popolo, ordinò che fossero portati davanti al suo tribunale in piena notte.</p>
+        <p><seg type="versicle" n="66">66</seg> E vedendo che non riusciva né a ingannarli con lusinghe né a spaventarli con minacce, ordinò di irrogargli la sentenza capitale.</p>
+        <p><seg type="versicle" n="67">67</seg> Lui, invece, scappò immediatamente con tutto il suo ufficio, e non fu possibile assolutamente sapere dove se ne andò.</p>
+        <p><seg type="versicle" n="68">68</seg> Allora tutto il popolo ebbe gioia per il martirio e lutto per la loro morte.</p>
+        <p><seg type="versicle" n="69">69</seg> E i tre furono sepolti da sant’Abbondio non lontani dal corpo di san Valentino, lodando il signore Gesù Cristo, che vive e regna con Dio Padre e lo Spirito Santo nei secoli dei secoli. Amen.</p>
+      </div> </body>
+  </text>
+</TEI>
+</teiCorpus>
